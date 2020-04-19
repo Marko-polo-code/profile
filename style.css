@@ -1,0 +1,77 @@
+/*Pick a nice background-color, font-family, color, font-size and line-height for the <body>.*/
+
+body {
+  color: #1E3888;
+  background-color: #01161E;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  line-height: 3;
+  letter-spacing: 10px;
+}
+
+div {
+  border-top: 2px solid #BEE9E8;
+  border-right: 2px solid #BEE9E8;
+  border-bottom: 2px solid #BEE9E8;
+  border-left: 2px solid #BEE9E8;
+  box-shadow: 2px 2px 3px grey;
+
+  margin: 20px;
+  padding: 30px;                             /* Internal space */
+  border-radius: 15px;                        /* Small radius */
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+h1 {
+  color: #F7FFF7;
+  font-family: Noto Serif, serif;
+  font-weight: bold;
+}
+
+
+h2 {
+  color: #F7FFF7;
+  font-family: Noto Serif, serif;
+  font-weight: bold;
+}
+
+
+h3 {
+  color: #F7FFF7;
+  font-family: Noto Serif, serif;
+}
+
+ul {
+  color: #F7FFF7;
+  font-family: Noto Serif, serif;
+}
+
+p {
+  color: #F7FFF7;
+  font-family: Noto Serif, serif;
+}
+
+#picture {
+    width: 100%;
+    height:100%;
+    border-radius: 150px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.shadowed {
+  box-shadow: 3px 3px 3px #F7FFF7;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
