@@ -4,22 +4,9 @@ body {
   color: #1E3888;
   background-color: #01161E;
   font-family: 'Open Sans', sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 3;
-  letter-spacing: 10px;
-}
-
-div {
-  border-top: 2px solid #BEE9E8;
-  border-right: 2px solid #BEE9E8;
-  border-bottom: 2px solid #BEE9E8;
-  border-left: 2px solid #BEE9E8;
-  box-shadow: 2px 2px 3px grey;
-
-  margin: 20px;
-  padding: 30px;                             /* Internal space */
-  border-radius: 15px;                        /* Small radius */
-  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  letter-spacing: 5px;
 }
 
 h1 {
@@ -52,17 +39,17 @@ p {
 }
 
 #picture {
-    width: 100%;
-    height:100%;
+    width: 35%;
+    height: 35%;
     border-radius: 150px;
-}
-
-.text-center {
-  text-align: center;
 }
 
 .shadowed {
   box-shadow: 3px 3px 3px #F7FFF7;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .list-inline > li {
@@ -73,5 +60,63 @@ p {
 .list-inline {
   list-style: none;
   padding-left: 0px;
+}
+
+/* Banner below */
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Card */
+
+.card-product {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}
+
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
 }
 
