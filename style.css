@@ -3,7 +3,7 @@
 body {
   color: #1E3888;
   background-color: #01161E;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "soleil", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
   line-height: 3;
   letter-spacing: 5px;
@@ -11,21 +11,21 @@ body {
 
 h1 {
   color: #F7FFF7;
-  font-family: Noto Serif, serif;
+  font-family: "soleil", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 
 
 h2 {
   color: #F7FFF7;
-  font-family: Noto Serif, serif;
+  font-family: "soleil", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 
 
 h3 {
   color: #F7FFF7;
-  font-family: Noto Serif, serif;
+  font-family: "soleil", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 ul {
@@ -35,7 +35,11 @@ ul {
 
 p {
   color: #F7FFF7;
-  font-family: Noto Serif, serif;
+  font-family: "soleil", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#product {
+  display: flex; /* or inline-flex */
 }
 
 #picture {
