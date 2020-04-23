@@ -4,7 +4,7 @@ body {
   color: #1E3888;
   background-color: #01161E;
   font-family: "soleil", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 3;
   letter-spacing: 5px;
 }
@@ -39,13 +39,29 @@ p {
 }
 
 #product {
-  display: flex; /* or inline-flex */
+  display: inline-flex;
 }
 
 #picture {
-    width: 35%;
-    height: 35%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 350px;
     border-radius: 150px;
+}
+
+.info {
+  text-align: center;
+}
+
+.projects {
+
+}
+
+.contact {
+  text-align: center;
 }
 
 .shadowed {
@@ -68,13 +84,14 @@ p {
 
 /* Banner below */
 
-.banner {
+.intro {
+  position: relative;
   background-size: cover;
   background-position: center;
   padding: 150px 0;
 }
 
-.banner h1 {
+.intro h1 {
   margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
@@ -82,7 +99,7 @@ p {
   font-weight: bold;
 }
 
-.banner p {
+.intro p {
   font-size: 20px;
   color: white;
   opacity: .7;
