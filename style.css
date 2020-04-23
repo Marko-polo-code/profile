@@ -1,10 +1,10 @@
 /*Pick a nice background-color, font-family, color, font-size and line-height for the <body>.*/
 
 body {
-  color: #1E3888;
+  color: #F7FFF7;
   background-color: #01161E;
   font-family: "soleil", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 30px;
+  /* font-size: 20px; */
   line-height: 3;
   letter-spacing: 5px;
 }
@@ -22,50 +22,56 @@ h2 {
   font-weight: bold;
 }
 
+/* Banner */
 
-h3 {
-  color: #F7FFF7;
-  font-family: "soleil", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.intro {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  height: 480px;
 }
 
-ul {
-  color: #F7FFF7;
-  font-family: Noto Serif, serif;
-}
-
-p {
-  color: #F7FFF7;
-  font-family: "soleil", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-#product {
-  display: inline-flex;
-}
+/* picture */
 
 #picture {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 350px;
     height: 350px;
-    border-radius: 150px;
+    border-radius: 175px;
+}
+
+.shadowed {
+  box-shadow: 3px 3px 3px #F7FFF7;
+}
+
+/* div */
+
+.container {
+  width: 100%;
+  height: 100%;
 }
 
 .info {
   text-align: center;
+  font-size: 50px;
+  color: white;
 }
 
 .projects {
 
 }
 
+#product {
+  display: inline-flex;
+}
+
 .contact {
   text-align: center;
 }
 
-.shadowed {
-  box-shadow: 3px 3px 3px #F7FFF7;
+/* element */
+
+.opening-content {
+  padding: 130px;
 }
 
 .text-center {
@@ -82,36 +88,18 @@ p {
   padding-left: 0px;
 }
 
-/* Banner below */
-
-.intro {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  padding: 150px 0;
-}
-
-.intro h1 {
-  margin: 0;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
-  font-weight: bold;
-}
-
-.intro p {
-  font-size: 20px;
-  color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-}
 
 /* Card */
+
+.products {
+  display: flex;
+  justify-content: space-around;
+}
 
 .card-product {
   overflow: hidden;
   height: 120px;
-  background: white;
+  background: #916C80;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
