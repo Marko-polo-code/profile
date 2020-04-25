@@ -5,7 +5,6 @@ body {
   background-color: #01161E;
   font-family: "soleil", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* font-size: 20px; */
-  line-height: 3;
   letter-spacing: 5px;
 }
 
@@ -13,13 +12,18 @@ h1 {
   color: #F7FFF7;
   font-family: "soleil", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
+  font-size: 40px;
 }
-
 
 h2 {
   color: #F7FFF7;
   font-family: "soleil", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
+  font-size: 30px;
+}
+
+a {
+  color: white;
 }
 
 /* Banner */
@@ -29,9 +33,28 @@ h2 {
   background-position: center;
   padding: 150px 0;
   height: 480px;
+  line-height: 3;
 }
 
-/* picture */
+/* sections */
+
+.container {
+  width: 100%;
+  height: 789px;
+  min-height:789px
+}
+
+/* About myself */
+
+.info {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+
+.me {
+  padding: 75px;
+}
 
 #picture {
     width: 350px;
@@ -43,29 +66,34 @@ h2 {
   box-shadow: 3px 3px 3px #F7FFF7;
 }
 
-/* div */
-
-.container {
-  width: 100%;
-  height: 100%;
-}
-
-.info {
-  text-align: center;
-  font-size: 50px;
-  color: white;
-}
+/* My projects */
 
 .projects {
+  padding: 75px;
+}
 
+.header {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 #product {
   display: inline-flex;
 }
 
+/* Contact */
+
 .contact {
+  padding: 75px;
   text-align: center;
+}
+
+#email {
+  text-decoration: none;
+}
+
+#email:hover {
+  color: grey;
 }
 
 /* element */
@@ -89,20 +117,25 @@ h2 {
 }
 
 
+
 /* Card */
 
 .products {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  margin-left: 50px;
 }
 
 .card-product {
-  overflow: hidden;
-  height: 120px;
-  background: #916C80;
+  /* overflow: hidden; */
+  width: 560px
+  height: 200px;
+  background: #01161E;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
+  border-radius: 5px;
 }
 
 .card-product img {
