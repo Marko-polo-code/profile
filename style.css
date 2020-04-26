@@ -1,32 +1,32 @@
 /*Pick a nice background-color, font-family, color, font-size and line-height for the <body>.*/
 
 body {
-  color: #F7FFF7;
+  color: #D9D9D9;
   background-color: #01161E;
   font-family: "soleil", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 5px;
 }
 
 h1 {
-  color: #F7FFF7;
+  color: #D9D9D9;
   font-family: "soleil", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 40px;
 }
 
 h2 {
-  color: #F7FFF7;
+  color: #D9D9D9;
   font-family: "soleil", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 30px;
 }
 
 a {
-  color: white;
+  color: #738290;;
 }
 
 a:hover {
-  color: grey;
+  color: #EFF2EF;
 }
 
 /* Banner */
@@ -66,7 +66,7 @@ a:hover {
 }
 
 .shadowed {
-  box-shadow: 3px 3px 3px #F7FFF7;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 /* My projects */
@@ -92,7 +92,7 @@ a:hover {
 }
 
 #email:hover {
-  color: grey;
+  color: white;
 }
 
 /* element */
@@ -130,11 +130,12 @@ a:hover {
 
 .card-product {
   overflow: hidden;
-  width: 300px
-  height: 300px;
+  width: 560px;
+  height: 130px;
+  padding: 5px;
   margin: 15px;
   flex-grow: 2;
-  background: #01161E;
+  background: #847996;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
