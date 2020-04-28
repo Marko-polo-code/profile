@@ -29,6 +29,7 @@ a {
 a:hover {
   opacity: 0.5;
   transition-duration: 1s;
+  text-decoration: none;
 }
 
 /* Banner */
@@ -38,7 +39,7 @@ a:hover {
   background-position: center;
   color: white;
   padding: 150px 0;
-  height: 480px;
+  height: 789px;
   line-height: 3;
 }
 
@@ -132,7 +133,7 @@ a:hover {
 /* Card */
 
 .products {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 100px;
@@ -140,11 +141,11 @@ a:hover {
 
 .card-product {
   overflow: hidden;
-  width: 560px;
+  width: 100%;
   height: 130px;
   padding: 5px;
   margin: 15px;
-  flex-grow: 2;
+  flex-grow: 1;
   background: #847996;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
