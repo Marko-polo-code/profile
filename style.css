@@ -31,9 +31,10 @@ a:hover {
   transition-duration: 1s;
   text-decoration: none;
   color: white;
+  transition: all 0.3s ease 0s;
+  transform: scale(1.1);
 }
 
-/* Banner */
 
 .intro {
   background-size: cover;
@@ -65,9 +66,9 @@ a:hover {
 }
 
 #picture {
-    width: 350px;
-    height: 350px;
-    border-radius: 175px;
+    max-width: 40%;
+    height: auto;
+    border-radius: 50%;
 }
 
 .shadowed {
@@ -85,8 +86,8 @@ a:hover {
   margin-bottom: 60px;
 }
 
-.love {
-  color: #e01e37;
+.laptop {
+  color: white;
   font-size: 70px;
   text-align: center;
   margin-top: 60px;
@@ -151,7 +152,11 @@ a:hover {
   display: flex;
   align-items: center;
   border-radius: 5px;
+}
+
+.card-product:hover {
   transition: all 0.3s ease 0s;
+  transform: scale(1.1);
 }
 
 .card-product img {
