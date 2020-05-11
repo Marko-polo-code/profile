@@ -8,8 +8,11 @@
     <title class="text-center">Mark Muller</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+      <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+      <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
@@ -21,7 +24,7 @@
 
       <div class="intro" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1527072822261-d82e76bdb103?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);">
         <div class="opening-content">
-          <h1 style="font-size:4vw;">Hello! I'm Mark</h1>
+          <h1 id="word" style="font-size:4vw;">I'm Mark</h1>
           <h2 style="font-size:2vw;">Welcome to my world</h2>
         </div>
       </div>
@@ -101,12 +104,28 @@
           <div class="closing-content">
             <div class="header">
               <h2 style="font-size:4vw;">Contact</h2>
-              <p style="font-size:2vw;">My email to discuss any entrepreneurial projects or ideas.</p>
+              <p style="font-size:2vw;">My email to discuss any entrepreneurial projects, ideas or programming.</p>
             </div>
             <a target="_blank" href="mailto:mark.muller.w@gmail.com" id="email" style="font-size:2vw;">mark.muller.w@gmail.com</a>
           </div>
         </div>
       </div>
+
+      <script>
+      document.write(Date());
+
+      $(function () {
+        count = 0;
+        wordsArray = ["Ola", "Hi", "Salut", "Hallo"];
+        setInterval(function () {
+          count++;
+          $("#word").fadeOut(500, function () {
+            $(this).text(wordsArray[count % wordsArray.length]).fadeIn(500);
+          });
+        }, 2000);
+
+      })+ "I'm Mark" ;
+      </script>
 
     </body>
 
