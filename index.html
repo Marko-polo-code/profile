@@ -24,8 +24,8 @@
 
       <div class="intro" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1527072822261-d82e76bdb103?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);">
         <div class="opening-content">
-          <h1 id="word" style="font-size:4vw;">I'm Mark</h1>
-          <h2 style="font-size:2vw;">Welcome to my world</h2>
+          <h1 id="word" style="font-size:4vw;">Hi, I'm Mark</h1>
+          <h2 style="font-size:2vw;">Welcome to my website</h2>
         </div>
       </div>
 
@@ -104,7 +104,7 @@
           <div class="closing-content">
             <div class="header">
               <h2 style="font-size:4vw;">Contact</h2>
-              <p style="font-size:2vw;">My email to discuss any entrepreneurial projects, ideas or programming.</p>
+              <p style="font-size:2vw;">My email to discuss any projects, ideas or just programming.</p>
             </div>
             <a target="_blank" href="mailto:mark.muller.w@gmail.com" id="email" style="font-size:2vw;">mark.muller.w@gmail.com</a>
           </div>
@@ -116,15 +116,15 @@
 
       $(function () {
         count = 0;
-        wordsArray = ["Ola", "Hi", "Salut", "Hallo"];
+        wordsArray = ["Hola", "Salut", "Hallo", "Nǐ hǎo", "Salam", "Konnichiwa", "Asalaam alaikum"];
         setInterval(function () {
           count++;
-          $("#word").fadeOut(500, function () {
-            $(this).text(wordsArray[count % wordsArray.length]).fadeIn(500);
+          $("#word").fadeOut(1000, function () {
+            $(this).text(wordsArray[count % wordsArray.length]).fadeIn(1000);
           });
-        }, 2000);
+        }, 4000);
 
-      })+ "I'm Mark" ;
+      });
       </script>
 
     </body>
